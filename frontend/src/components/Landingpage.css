@@ -1,0 +1,357 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+.atelier-home {
+  --ivory: #faf8f3;
+  --espresso: #291c17;
+  --brown: #674a3b;
+  --gold: #a88a62;
+  --line: #ded7cc;
+
+  min-height: 100vh;
+  padding: 0 4.5%;
+  background: var(--ivory);
+  color: var(--espresso);
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.atelier-header {
+  border-bottom: 1px solid var(--line);
+}
+
+.atelier-topbar {
+  min-height: 94px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+}
+
+.atelier-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--espresso);
+  text-decoration: none;
+}
+
+.atelier-logo-image {
+  width: 58px;
+  height: 58px;
+  max-width: 58px;
+  max-height: 58px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+.atelier-brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.atelier-brand-text strong {
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+.atelier-brand-text em {
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.atelier-utility-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.atelier-utility-nav a,
+.atelier-utility-nav button {
+  color: var(--espresso);
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.atelier-utility-nav a:hover,
+.atelier-utility-nav button:hover {
+  color: var(--gold);
+}
+
+.atelier-utility-nav button {
+  border: 1px solid var(--gold);
+  padding: 11px 17px;
+}
+
+.atelier-main-nav {
+  min-height: 49px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  text-align: center;
+}
+
+.atelier-main-nav a {
+  color: var(--espresso);
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 15px 5px;
+  position: relative;
+}
+
+.atelier-main-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background: var(--espresso);
+  transform: translateX(-50%);
+  transition: width 0.2s;
+}
+
+.atelier-main-nav a:hover::after {
+  width: 45px;
+}
+
+.atelier-about {
+  display: grid;
+  grid-template-columns: 0.8fr 2.2fr;
+  gap: 55px;
+  padding: 42px 3% 36px;
+  align-items: start;
+}
+
+.atelier-about h1 {
+  margin: 0;
+  font-size: clamp(43px, 5vw, 65px);
+  font-weight: 400;
+}
+
+.atelier-about-copy {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 38px;
+  align-items: center;
+}
+
+.atelier-about-copy p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.atelier-copy-divider {
+  height: 100%;
+  min-height: 90px;
+  background: #b9aa98;
+}
+
+.atelier-library {
+  width: min(850px, 82%);
+  margin: 0 auto 55px;
+  position: relative;
+  overflow: hidden;
+  background: #e9dfd0;
+}
+
+.atelier-library img {
+  display: block;
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  filter: sepia(13%) saturate(85%);
+}
+
+.atelier-library-caption {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 19px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(transparent, rgba(31, 20, 14, 0.75));
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.atelier-library-caption button {
+  border: 1px solid rgba(255,255,255,0.7);
+  background: transparent;
+  color: white;
+  padding: 10px 14px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.atelier-library-caption button:hover {
+  background: var(--ivory);
+  color: var(--espresso);
+}
+
+.atelier-footer {
+  min-height: 65px;
+  padding: 15px 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  color: var(--brown);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+
+.atelier-footer button {
+  border: 0;
+  background: transparent;
+  color: var(--brown);
+  font-size: 10px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .atelier-home {
+    padding: 0 4%;
+  }
+
+  .atelier-topbar {
+    gap: 15px;
+  }
+
+  .atelier-utility-nav {
+    gap: 14px;
+  }
+
+  .atelier-about {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .atelier-library {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .atelier-topbar {
+    padding: 15px 0;
+    align-items: flex-start;
+  }
+
+  .atelier-logo-image {
+    width: 48px;
+    height: 48px;
+    max-width: 48px;
+    max-height: 48px;
+  }
+
+  .atelier-brand {
+    gap: 9px;
+  }
+
+  .atelier-brand-text strong {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+
+  .atelier-brand-text em {
+    font-size: 8px;
+  }
+
+  .atelier-utility-nav {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 9px;
+  }
+
+  .atelier-utility-nav a {
+    display: none;
+  }
+
+  .atelier-utility-nav button {
+    padding: 8px 10px;
+    font-size: 9px;
+  }
+
+  .atelier-main-nav a {
+    font-size: 9px;
+    letter-spacing: 0;
+  }
+
+  .atelier-about {
+    padding: 32px 2% 25px;
+  }
+
+  .atelier-about-copy {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .atelier-copy-divider {
+    width: 100%;
+    height: 1px;
+    min-height: 1px;
+  }
+
+  .atelier-about-copy p {
+    font-size: 13px;
+  }
+
+  .atelier-library img {
+    height: 290px;
+  }
+
+  .atelier-library-caption {
+    padding: 12px;
+    gap: 8px;
+    font-size: 8px;
+  }
+
+  .atelier-library-caption button {
+    font-size: 8px;
+    padding: 8px;
+  }
+
+  .atelier-footer {
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 8px;
+  }
+}
+/* FIX: Keep the illustrated logo compact */
+.atelier-home .atelier-topbar .atelier-brand > img.atelier-logo-image {
+  width: 58px !important;
+  height: 58px !important;
+  min-width: 58px !important;
+  min-height: 58px !important;
+  max-width: 58px !important;
+  max-height: 58px !important;
+  object-fit: contain !important;
+  display: block;
+  flex: 0 0 58px;
+}
+
+.atelier-home .atelier-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.atelier-home .atelier-topbar {
+  min-height: 94px;
+}

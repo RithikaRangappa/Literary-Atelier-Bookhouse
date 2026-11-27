@@ -1,0 +1,7 @@
+node_modules/
+frontend/node_modules/
+.env
+bookstore.db
+bookstore.db-shm
+bookstore.db-wal
+dist/

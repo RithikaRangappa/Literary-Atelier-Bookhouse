@@ -1,0 +1,224 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "The Psychology of Money",
+      "author": "Morgan Housel",
+      "price": 399,
+      "category": "Finance",
+      "description": "Lessons on wealth, greed and happiness through timeless financial stories.",
+      "availability": "Available",
+      "image": "https://covers.openlibrary.org/b/isbn/9780857197689-L.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "price": 450,
+      "category": "Self Help",
+      "description": "A practical guide to building good habits and breaking bad ones.",
+      "availability": "Available",
+      "image": "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg"
+    },
+    {
+      "id": "3",
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "price": 299,
+      "category": "Fiction",
+      "description": "A young shepherd travels in search of treasure and discovers his destiny.",
+      "availability": "Out of Stock",
+      "image": "https://covers.openlibrary.org/b/isbn/9780062315007-L.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Deep Work",
+      "author": "Cal Newport",
+      "price": 499,
+      "category": "Productivity",
+      "description": "Rules for developing deep focus and producing meaningful work.",
+      "availability": "Available",
+      "image": "https://covers.openlibrary.org/b/isbn/9781455586691-L.jpg"
+    },
+    {
+      "id": "6",
+      "title": "The Silent Patient",
+      "author": "Alex Michaelides",
+      "price": 399,
+      "category": "Thriller",
+      "description": "A psychological thriller about a woman who stops speaking after a shocking crime.",
+      "availability": "Available",
+      "image": "https://covers.openlibrary.org/b/isbn/9781250301697-L.jpg"
+    },
+    {
+      "id": "7",
+      "title": "1984",
+      "author": "George Orwell",
+      "price": 250,
+      "category": "Classics",
+      "description": "A dystopian novel exploring surveillance, power and individual freedom.",
+      "availability": "Available",
+      "image": "https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg"
+    },
+    {
+      "id": "8",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "price": 299,
+      "category": "Classics",
+      "description": "A beloved story of love, social expectations and first impressions.",
+      "availability": "Available",
+      "image": "https://covers.openlibrary.org/b/isbn/9780141439518-L.jpg"
+    },
+    {
+      "id": "9",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "price": 275,
+      "category": "Classics",
+      "description": "A portrait of wealth, ambition and the American Dream in the Jazz Age.",
+      "availability": "Out of Stock",
+      "image": "https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg"
+    },
+    {
+      "id": "10",
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "price": 399,
+      "category": "Fantasy",
+      "description": "Bilbo Baggins embarks on an unexpected adventure through Middle-earth.",
+      "availability": "Available",
+      "image": "https://covers.openlibrary.org/b/isbn/9780547928227-L.jpg"
+    },
+    {
+      "id": "11",
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "author": "J.K. Rowling",
+      "price": 499,
+      "category": "Fantasy",
+      "description": "A young boy discovers he is a wizard and begins his journey at Hogwarts.",
+      "availability": "Available",
+      "image": "https://covers.openlibrary.org/b/isbn/9780590353427-L.jpg"
+    },
+    {
+      "id": "12",
+      "title": "Gone Girl",
+      "author": "Gillian Flynn",
+      "price": 399,
+      "category": "Thriller",
+      "description": "A gripping mystery about a missing wife and the secrets within a marriage.",
+      "availability": "Available",
+      "image": "https://covers.openlibrary.org/b/isbn/9780307588371-L.jpg"
+    },
+    {
+      "id": "13",
+      "title": "Ikigai",
+      "author": "Hector Garcia and Francesc Miralles",
+      "price": 350,
+      "category": "Self Help",
+      "description": "An exploration of the Japanese philosophy of finding purpose and meaning.",
+      "availability": "Available",
+      "image": "https://covers.openlibrary.org/b/isbn/9780143130727-L.jpg"
+    },
+    {
+      "id": "14",
+      "title": "Sapiens",
+      "author": "Yuval Noah Harari",
+      "price": 550,
+      "category": "Non-Fiction",
+      "description": "A sweeping account of human history and the development of civilization.",
+      "availability": "Available",
+      "image": "https://covers.openlibrary.org/b/isbn/9780062316097-L.jpg"
+    },
+    {
+      "id": "15",
+      "title": "Educated",
+      "author": "Tara Westover",
+      "price": 450,
+      "category": "Biography",
+      "description": "A memoir about education, family and the pursuit of independence.",
+      "availability": "Available",
+      "image": "https://covers.openlibrary.org/b/isbn/9780399590504-L.jpg"
+    },
+    {
+      "id": "16",
+      "title": "The Midnight Library",
+      "author": "Matt Haig",
+      "price": 399,
+      "category": "Fiction",
+      "description": "A woman explores the many possible lives she could have lived.",
+      "availability": "Available",
+      "image": "https://covers.openlibrary.org/b/isbn/9780525559474-L.jpg"
+    },
+    {
+      "id": "17",
+      "title": "It Ends with Us",
+      "author": "Colleen Hoover",
+      "price": 399,
+      "category": "Romance",
+      "description": "A contemporary story about love, difficult choices and personal strength.",
+      "availability": "Available",
+      "image": "https://covers.openlibrary.org/b/isbn/9781501110368-L.jpg"
+    },
+    {
+      "id": "18",
+      "title": "The Kite Runner",
+      "author": "Khaled Hosseini",
+      "price": 350,
+      "category": "Fiction",
+      "description": "A moving story of friendship, betrayal and redemption set in Afghanistan.",
+      "availability": "Available",
+      "image": "https://covers.openlibrary.org/b/isbn/9781594631931-L.jpg"
+    },
+    {
+      "id": "19",
+      "title": "The Book Thief",
+      "author": "Markus Zusak",
+      "price": 425,
+      "category": "Historical Fiction",
+      "description": "A young girl discovers the power of books during World War II.",
+      "availability": "Out of Stock",
+      "image": "https://covers.openlibrary.org/b/isbn/9780375842207-L.jpg"
+    },
+    {
+      "id": "20",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "price": 325,
+      "category": "Classics",
+      "description": "A powerful story of justice, morality and childhood in the American South.",
+      "availability": "Available",
+      "image": "https://covers.openlibrary.org/b/isbn/9780061120084-L.jpg"
+    },
+    {
+      "title": "Five Survive",
+      "author": "Holly Jackson",
+      "price": 450,
+      "category": "Fiction",
+      "description": "Fiction",
+      "availability": "Available",
+      "image": "https://covers.openlibrary.org/b/id/13187233-L.jpg",
+      "id": "Un_q4tG"
+    },
+    {
+      "title": "Rich Dad Poor Dad",
+      "author": "Robert Kiyosaki",
+      "price": 350,
+      "category": "Finance",
+      "description": "Finance",
+      "availability": "Available",
+      "image": "https://covers.openlibrary.org/b/id/8315603-L.jpg",
+      "id": "evOuOxD"
+    },
+    {
+      "title": "Murder On The Orient Express",
+      "author": "Agatha Christe",
+      "price": 300,
+      "category": "Fiction",
+      "description": "Fiction",
+      "availability": "Available",
+      "image": "https://covers.openlibrary.org/b/id/11100465-L.jpg",
+      "id": "mMP5iiz"
+    }
+  ]
+}

@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+.atelier-catalogue {
+  --atelier-ivory: #f8f4ed;
+  --atelier-paper: #fffdf8;
+  --atelier-espresso: #382317;
+  --atelier-brown: #5b4030;
+  --atelier-muted: #82756a;
+  --atelier-gold: #b99a6b;
+  --atelier-line: #e8dfd3;
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+  background: var(--atelier-paper);
+  color: var(--atelier-espresso);
+}
+
+.atelier-catalogue-header {
+  background: rgba(255,253,248,.98);
+  border-bottom: 1px solid var(--atelier-line);
+}
+
+.atelier-header-top {
+  min-height: 100px;
+  padding: 14px clamp(22px, 4.5vw, 68px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.atelier-wordmark {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: var(--atelier-espresso);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.atelier-header-logo {
+  width: 68px;
+  height: 68px;
+  min-width: 68px;
+  object-fit: contain;
+  display: block;
+}
+
+.atelier-wordmark-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.atelier-wordmark-copy strong {
+  font: 500 23px/1.2 'Playfair Display', Georgia, serif;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+.atelier-wordmark-copy em {
+  font: italic 12px 'Playfair Display', Georgia, serif;
+  letter-spacing: 2px;
+  color: var(--atelier-muted);
+}
+
+.atelier-header-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.atelier-utility-nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 3vw, 36px);
+}
+.atelier-utility-nav a,
+.atelier-main-nav a {
+  color: var(--atelier-espresso);
+  text-decoration: none;
+  font: 11px 'Playfair Display', Georgia, serif;
+  letter-spacing: .35px;
+}
+.atelier-utility-nav a:hover,
+.atelier-main-nav a:hover { color: #987448; }
+
+.atelier-account {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-left: 20px;
+  border-left: 1px solid var(--atelier-line);
+  color: var(--atelier-muted);
+  font-size: 11px;
+}
+.atelier-account span { display: inline-flex; align-items: center; gap: 7px; }
+.atelier-account button {
+  border: 0;
+  background: transparent;
+  color: var(--atelier-espresso);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  letter-spacing: .5px;
+}
+.atelier-account button:hover { color: #987448; }
+
+.atelier-main-nav {
+  min-height: 46px;
+  border-top: 1px solid var(--atelier-line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(35px, 9vw, 130px);
+  padding: 0 20px;
+}
+.atelier-main-nav a {
+  height: 46px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 12px;
+}
+.atelier-main-nav a.active::after {
+  content: '';
+  height: 1px;
+  background: var(--atelier-espresso);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 8px;
+}
+
+.atelier-catalogue-shell {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 30px clamp(22px, 4.5vw, 68px) 55px !important;
+  display: grid;
+  grid-template-columns: minmax(205px, 245px) minmax(0, 1fr);
+  gap: 30px;
+}
+
+.atelier-filter-panel {
+  padding: 0 24px 20px 0;
+  border-right: 1px solid var(--atelier-line);
+}
+.atelier-filter-panel > h2 {
+  font: italic 22px 'Playfair Display', Georgia, serif;
+  margin: 0 0 34px;
+}
+.atelier-filter-group { margin-bottom: 22px; }
+.atelier-filter-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--atelier-espresso);
+  font: 600 10px 'Playfair Display', Georgia, serif;
+  letter-spacing: .5px;
+}
+.atelier-filter-group .form-select {
+  min-height: 39px;
+  border: 1px solid var(--atelier-line);
+  border-radius: 3px;
+  background-color: #fffdf9;
+  color: #514338;
+  font-size: 11px;
+  box-shadow: none;
+}
+.atelier-filter-group .form-select:focus,
+.atelier-search-field .form-control:focus {
+  border-color: var(--atelier-gold);
+  box-shadow: 0 0 0 2px rgba(185,154,107,.12);
+}
+.atelier-search-button {
+  min-height: 39px;
+  padding: 9px 18px !important;
+  border: 1px solid var(--atelier-espresso) !important;
+  border-radius: 3px !important;
+  background: var(--atelier-espresso) !important;
+  color: #fffaf2 !important;
+  font: 12px 'Playfair Display', Georgia, serif !important;
+  box-shadow: none !important;
+}
+.atelier-search-button:hover { background: #573a28 !important; }
+.add-book-button {
+  min-height: 39px;
+  padding: 9px 18px !important;
+  border: 1px solid var(--atelier-espresso) !important;
+  border-radius: 3px !important;
+  background: var(--atelier-espresso) !important;
+  color: #fffaf2 !important;
+  font: 12px 'Playfair Display', Georgia, serif !important;
+}
+.add-book-button:hover { background: #573a28 !important; }
+.atelier-search-button span { margin-left: 12px; }
+.atelier-quick-search {
+  border-top: 1px solid var(--atelier-line);
+  margin-top: 34px;
+  padding-top: 22px;
+}
+.atelier-quick-search h3 {
+  margin: 0 0 10px;
+  font: 12px 'Playfair Display', Georgia, serif;
+}
+.atelier-search-field { position: relative; }
+.atelier-search-field .form-control {
+  min-height: 38px;
+  padding-right: 35px;
+  border: 1px solid var(--atelier-line);
+  border-radius: 3px;
+  background: #fffdf9;
+  font-size: 10px;
+  font-style: italic;
+}
+.atelier-search-field > svg {
+  position: absolute;
+  right: 11px;
+  top: 12px;
+  color: var(--atelier-espresso);
+  font-size: 13px;
+  pointer-events: none;
+}
+.atelier-filter-note {
+  margin: 22px 0 0;
+  color: var(--atelier-muted);
+  font: italic 12px/1.55 'Playfair Display', Georgia, serif;
+}
+.atelier-admin-tools {
+  border-top: 1px solid var(--atelier-line);
+  margin-top: 25px;
+  padding-top: 18px;
+}
+.atelier-admin-tools > span {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 9px;
+  letter-spacing: 1.3px;
+  color: var(--atelier-muted);
+}
+.atelier-admin-tools .atelier-search-button { width: 100%; }
+.atelier-admin-counts {
+  display: grid;
+  gap: 6px;
+  margin-top: 12px;
+  color: var(--atelier-muted);
+  font-size: 10px;
+}
+
+.atelier-catalogue-main { min-width: 0; }
+.atelier-catalogue-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin: 0 0 18px;
+}
+.atelier-kicker {
+  margin: 0 0 6px;
+  color: var(--atelier-muted);
+  font-size: 9px;
+  letter-spacing: 1.4px;
+}
+.atelier-catalogue-heading h1 {
+  margin: 0 0 5px;
+  color: var(--atelier-espresso);
+  font: 500 27px 'Playfair Display', Georgia, serif;
+}
+.atelier-catalogue-heading p:not(.atelier-kicker) {
+  margin: 0;
+  color: var(--atelier-muted);
+  font: 12px 'Playfair Display', Georgia, serif;
+}
+.atelier-view-toggle { flex-shrink: 0; }
+.atelier-view-toggle .btn {
+  border: 1px solid var(--atelier-line);
+  border-radius: 3px;
+  background: #fffdf9;
+  color: var(--atelier-espresso);
+  font-size: 11px;
+  padding: 7px 12px;
+  box-shadow: none;
+}
+.atelier-view-toggle .btn svg { margin-right: 6px; }
+.atelier-view-toggle .btn.selected {
+  background: var(--atelier-espresso);
+  border-color: var(--atelier-espresso);
+  color: #fffaf2;
+}
+.atelier-admin-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  border-top: 1px solid var(--atelier-line);
+  border-bottom: 1px solid var(--atelier-line);
+  padding: 10px 0;
+  margin: 18px 0;
+  color: var(--atelier-muted);
+  font-size: 9px;
+  letter-spacing: .8px;
+}
+
+.atelier-book-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 28px;
+}
+.atelier-book {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(88px, 125px) minmax(0, 1fr);
+  gap: 20px;
+  padding: 18px 12px 18px 8px;
+  border-bottom: 1px solid var(--atelier-line);
+}
+.atelier-book-cover-wrap {
+  height: 158px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.atelier-book-cover {
+  max-width: 100%;
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  box-shadow: 0 3px 10px rgba(45,31,20,.13);
+}
+.atelier-book-info {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4px;
+}
+.atelier-book-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+.atelier-book-heading h3 {
+  margin: 0 0 5px;
+  color: #30231c;
+  font: 500 17px/1.25 'Playfair Display', Georgia, serif;
+}
+.atelier-book-author {
+  margin: 0 0 7px;
+  color: #5d5047;
+  font: 12px 'Playfair Display', Georgia, serif;
+}
+.atelier-book-category {
+  margin: 0;
+  color: var(--atelier-muted);
+  font: italic 12px 'Playfair Display', Georgia, serif;
+}
+.atelier-availability {
+  flex-shrink: 0;
+  display: inline-block;
+  padding: 4px 6px;
+  border: 1px solid var(--atelier-line);
+  color: var(--atelier-muted);
+  font-size: 8px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.atelier-availability.is-available {
+  border-color: #d7e1d4;
+  color: #54724d;
+}
+.atelier-availability.is-unavailable {
+  border-color: #e8d3cc;
+  color: #9a5747;
+}
+.atelier-book-description {
+  display: none;
+  margin: 10px 0 0;
+  color: var(--atelier-muted);
+  font-size: 10px;
+  line-height: 1.5;
+}
+.atelier-book-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 15px;
+}
+.atelier-book-price {
+  color: var(--atelier-espresso);
+  font: 500 17px 'Playfair Display', Georgia, serif;
+}
+.atelier-book-actions { display: flex; gap: 6px; }
+.atelier-icon-button {
+  width: 31px;
+  height: 31px;
+  display: inline-grid;
+  place-items: center;
+  padding: 0 !important;
+  border: 1px solid var(--atelier-line) !important;
+  border-radius: 2px !important;
+  background: transparent !important;
+  color: var(--atelier-espresso) !important;
+  font-size: 12px !important;
+}
+.atelier-icon-button:hover { background: #f2eadf !important; }
+.atelier-icon-button.delete { color: #965344 !important; }
+
+.atelier-table-wrap {
+  border-top: 1px solid var(--atelier-line);
+  border-bottom: 1px solid var(--atelier-line);
+}
+.atelier-table { margin: 0; min-width: 680px; }
+.atelier-table thead th {
+  padding: 13px 10px;
+  background: #f7f1e8;
+  border-bottom: 1px solid var(--atelier-line);
+  color: var(--atelier-muted);
+  font-size: 9px;
+  letter-spacing: .8px;
+  font-weight: 600;
+}
+.atelier-table tbody td {
+  padding: 12px 10px;
+  border-color: var(--atelier-line);
+  color: #55483f;
+  font-size: 11px;
+}
+.atelier-table-book { display: flex; align-items: center; gap: 12px; }
+.atelier-table-book img {
+  width: 38px;
+  height: 52px;
+  object-fit: contain;
+}
+.atelier-table-book strong {
+  color: var(--atelier-espresso);
+  font: 14px 'Playfair Display', Georgia, serif;
+}
+.atelier-state {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--atelier-muted);
+  text-align: center;
+}
+.atelier-state > svg { font-size: 26px; }
+.atelier-state h3 {
+  margin: 0;
+  color: var(--atelier-espresso);
+  font: 20px 'Playfair Display', Georgia, serif;
+}
+.atelier-state p { margin: 0 0 5px; font-size: 11px; }
+.atelier-results-count {
+  margin-top: 18px;
+  padding-top: 12px;
+  border-top: 1px solid var(--atelier-line);
+  color: var(--atelier-muted);
+  font-size: 10px;
+}
+.atelier-catalogue-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 20px clamp(22px, 4.5vw, 68px);
+  border-top: 1px solid var(--atelier-line);
+  color: var(--atelier-muted);
+  font: 10px 'Playfair Display', Georgia, serif;
+  letter-spacing: .6px;
+}
+
+/* Existing add/edit modal, restyled to match the bookhouse palette */
+.modal-content {
+  border: 1px solid var(--atelier-line);
+  border-radius: 3px;
+  background: var(--atelier-paper);
+  color: var(--atelier-espresso);
+}
+.modal-header {
+  background: #f5efe5;
+  border-bottom: 1px solid var(--atelier-line);
+  padding: 20px 24px;
+}
+.modal-eyebrow {
+  margin: 0 0 5px;
+  color: #9a7950;
+  font-size: 9px;
+  letter-spacing: 1.4px;
+}
+.modal-title { font: 500 22px 'Playfair Display', Georgia, serif; }
+.modal-body { padding: 24px; }
+.modal-body .form-label {
+  color: var(--atelier-brown);
+  font-size: 11px;
+  font-weight: 600;
+}
+.modal-body .form-control,
+.modal-body .form-select {
+  border-color: var(--atelier-line);
+  border-radius: 3px;
+  font-size: 12px;
+}
+.modal-body .form-control:focus,
+.modal-body .form-select:focus {
+  border-color: var(--atelier-gold);
+  box-shadow: 0 0 0 2px rgba(185,154,107,.12);
+}
+.modal-footer {
+  border-top: 1px solid var(--atelier-line);
+  padding: 15px 24px;
+}
+.modal-footer .btn-outline-secondary {
+  border-radius: 3px;
+  font-size: 11px;
+}
+.modal-footer .atelier-search-button { min-width: 125px; }
+
+@media (max-width: 1050px) {
+  .atelier-catalogue-shell { grid-template-columns: 205px minmax(0,1fr); gap: 22px; }
+  .atelier-book-grid { column-gap: 14px; }
+  .atelier-book { grid-template-columns: 95px minmax(0,1fr); gap: 13px; }
+  .atelier-book-cover-wrap { height: 140px; }
+  .atelier-book-heading h3 { font-size: 15px; }
+  .atelier-availability { font-size: 7px; }
+}
+@media (max-width: 760px) {
+  .atelier-header-top { align-items: center; }
+  .atelier-header-right { align-items: flex-end; flex-direction: column; gap: 12px; }
+  .atelier-utility-nav { gap: 14px; }
+  .atelier-utility-nav a { font-size: 9px; }
+  .atelier-account { border: 0; padding: 0; }
+  .atelier-main-nav { gap: 25px; overflow-x: auto; justify-content: flex-start; }
+  .atelier-main-nav a { white-space: nowrap; font-size: 10px; }
+  .atelier-catalogue-shell { grid-template-columns: 1fr; }
+  .atelier-filter-panel {
+    border-right: 0;
+    border-bottom: 1px solid var(--atelier-line);
+    padding: 0 0 22px;
+  }
+  .atelier-filter-panel > h2 { margin-bottom: 18px; }
+  .atelier-filter-group { display: inline-block; width: calc(50% - 8px); margin-right: 8px; }
+  .atelier-quick-search { margin-top: 18px; padding-top: 15px; }
+  .atelier-filter-note { display: none; }
+}
+@media (max-width: 560px) {
+  .atelier-header-top { padding: 13px 16px; gap: 12px; }
+  .atelier-header-logo {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+  }
+  .atelier-wordmark { gap: 10px; }
+  .atelier-wordmark-copy strong {
+    font-size: 13px;
+    letter-spacing: 1px;
+    white-space: normal;
+  }
+  .atelier-wordmark-copy em {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  .atelier-utility-nav { display: none; }
+  .atelier-main-nav { padding: 0 16px; gap: 24px; }
+  .atelier-catalogue-shell { padding: 22px 16px 35px !important; }
+  .atelier-catalogue-heading { flex-direction: column; }
+  .atelier-catalogue-heading h1 { font-size: 25px; }
+  .atelier-book-grid { grid-template-columns: 1fr; }
+  .atelier-book { grid-template-columns: 100px minmax(0,1fr); padding: 16px 0; }
+  .atelier-book-cover-wrap { height: 145px; }
+  .atelier-book-heading h3 { font-size: 16px; }
+  .atelier-catalogue-footer { flex-direction: column; padding: 18px 16px; gap: 7px; }
+  .atelier-admin-summary { gap: 9px 15px; }
+}
